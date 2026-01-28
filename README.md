@@ -1,13 +1,13 @@
-# 📈 Automated Sales Forecasting System
+# Automated Sales Forecasting System
 
 ## Overview
 This project is a production-grade forecasting pipeline designed to automate monthly sales predictions. It connects to a SQL database, processes historical sales data, and generates a "Shopping List" (purchase suggestions) for the upcoming month using a LightGBM machine learning model.
 
 ## Key Features
--   **🔮 Future Inference:** Automatically detects the last available date and predicts demand for the *next* month.
--   **⚡ Instant Predictions:** Persists model state and Target Encodings, allowing for instant inference without re-training.
--   **🛡️ Quality Gate:** Automatically checks model reliability ($R^2$ score) and warns if data volatility is high ($R^2 < 0.40$).
--   **🔌 Database Integration:** Connects directly to SQL Server to fetch live data.
+-   ** Future Inference:** Automatically detects the last available date and predicts demand for the *next* month.
+-   ** Instant Predictions:** Persists model state and Target Encodings, allowing for instant inference without re-training.
+-   ** Quality Gate:** Automatically checks model reliability ($R^2$ score) and warns if data volatility is high ($R^2 < 0.40$).
+-   ** Database Integration:** Connects directly to SQL Server to fetch live data.
 
 ## Setup
 
