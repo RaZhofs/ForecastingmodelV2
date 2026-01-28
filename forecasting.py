@@ -131,15 +131,17 @@ class Forecaster:
         
         return metrics, test_df
 
-    def save(self):
+    def save(self, metrics=None):
         if self.model:
             # We save a dictionary containing model + metadata
             payload = {
                 "model": self.model,
                 "encodings": self.encodings,
-                "global_mean": self.global_mean
+                "global_mean": self.global_mean,
+                "last_metrics": metrics # Save stats for performance monitoring
             }
             joblib.dump(payload, MODEL_PATH)
+            self.last_metrics = metrics
             
     def load(self):
         if os.path.exists(MODEL_PATH):
@@ -149,8 +151,10 @@ class Forecaster:
                 self.model = payload["model"]
                 self.encodings = payload.get("encodings", {})
                 self.global_mean = payload.get("global_mean", 0)
+                self.last_metrics = payload.get("last_metrics", {})
             else:
-                self.model = payload # Backward compatibility (sort of)
+                self.model = payload # Backward compatibility
+                self.last_metrics = {}
             return True
         return False
 
@@ -171,17 +175,22 @@ class Forecaster:
         
         # 2. Construct Placeholder Data
         # We need the last state of every product to generate features (Lags)
-        # Identify active products (appeared in history)
-        unique_groups = raw_df[['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse']].drop_duplicates(keep='last')
+        # Identify active products (appeared in history) and get their LAST KNOWN PRICE
+        # Sort by date to ensure 'last' is truly recent
+        raw_df_sorted = raw_df.sort_values("CreateDate")
+        unique_groups = raw_df_sorted[['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse', 'UnitPrice']].drop_duplicates(
+            subset=['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse'], 
+            keep='last'
+        )
         
         future_df = unique_groups.copy()
         future_df["CreateDate"] = next_month_date
         future_df["Quantity"] = 0 # Dummy
-        # We need UnitPrice. We can take the global mean or last known.
-        # Ideally we join with last known price. For now, set to 9999 to pass price filter > 1.
-        # Actually, let's just fetch the mean price from raw_df per product to be safe?
-        # Simpler: Set to a valid dummy.
-        future_df["UnitPrice"] = 100 
+        # UnitPrice is now inherited from the last transaction
+        # If price is 0 or NaN, we might want to default to 1 or global mean to pass filters.
+        # But assuming data quality is okay (processed > 1 filter checks later).
+        # Just in case, fillna(0) and let preprocessing filter handle if price < 1
+        future_df["UnitPrice"] = future_df["UnitPrice"].fillna(0) 
         
         # 3. Concatenate and Process
         # We append future rows to history so that rolling/lags can be computed
@@ -205,8 +214,9 @@ class Forecaster:
         # 6. Predict
         X_future = future_rows[self.features]
         preds_log = self.model.predict(X_future)
+
         preds_real = np.expm1(preds_log).round(2)
         
-        future_rows["Predicted_Quantity"] = preds_real
+        future_rows["Predicted_Quantity"] = np.ceil(preds_real).astype(int)
         
         return future_rows[["date", "IdProduct", "IdWarehouse", "Predicted_Quantity"]]
