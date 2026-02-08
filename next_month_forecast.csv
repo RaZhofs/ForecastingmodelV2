@@ -1,86 +1,48 @@
 date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
-2026-02-01,194258,Sorerelief crema Glucosamina 224gr,258,3
-2026-02-01,194397,Ginkgo biloba liquido x 10 ampollas,258,2
-2026-02-01,194408,Palitos nutriespecial,258,2
-2026-02-01,194464,Resveratrol 1800mg 100 softgels,258,3
-2026-02-01,194564,Sangre de drago 30ml,258,2
-2026-02-01,195653,PapayEnz 100 softgels,258,3
-2026-02-01,194632,Magnesium 400mg 100 softgels,258,2
-2026-02-01,195650,Paquete de dulces * 100,258,2
-2026-02-01,195883,Citrato de magnesio 90 capsulas,258,5
-2026-02-01,195875,MGÑ 500ml,258,3
-2026-02-01,194200,Resveratrol extra strength 1600mg 100 softgels,258,3
-2026-02-01,194631,Melatonina 5mg + B6 X 100 Softgeles,258,2
-2026-02-01,193423,Crema colagen elastin 224g,258,3
-2026-02-01,193188,Colageno marino 1000gr,258,6
-2026-02-01,193421,Centella asiatica 400mg 60 capsulas,258,2
-2026-02-01,193420,Cal-Mag-Zinc plus vitamin D 100 softgels,258,2
-2026-02-01,193418,Lecitina 1200mg 100 softgels,258,3
-2026-02-01,193417,L-Carnitine 800mg 100 softgels,258,3
-2026-02-01,193404,Resveratrol 325mg 100 capsulas,258,3
 2026-02-01,193403,Spirulina 800mg 100 tabletas,258,2
+2026-02-01,193188,Colageno marino 1000gr,258,6
+2026-02-01,193404,Resveratrol 325mg 100 capsulas,258,3
 2026-02-01,193371,Vitamin E 1000 IU plus 100 softgels,258,2
 2026-02-01,193241,Biotin 5000 mcg 100 softgels,258,3
 2026-02-01,193238,Esencia floral Stress insomnio,258,2
 2026-02-01,193214,Harina de maca 250g,258,3
-2026-02-01,193184,Aceite de higado de bacalao 60 softgels,258,3
-2026-02-01,193070,Face lift Acido Hialuronico 60 capsulas,258,3
-2026-02-01,195887,Terapia Multiembronaria x 10 ampollas bebi x 10 polvo,258,4
-2026-02-01,193422,Aloe vera 60 softgels,258,3
-2026-02-01,197254,Crecepell tónico capilar 116ml,258,2
-2026-02-01,199763,Face lift Acido Hialuronico unidad,258,4
-2026-02-01,197676,Aloe vera 500ml,258,2
-2026-02-01,199857,Quinua Hojuela 250 gr,258,3
-2026-02-01,199856,Frutos mixtox 50gr,258,2
-2026-02-01,199849,Frutos mixtos 125gr,258,2
-2026-02-01,199848,Granola ligth 500gr,258,4
+2026-02-01,192840,Melatonina 10mg + vitamina B6 100 softgels,258,2
 2026-02-01,192990,Colageno marino 1500mg 120 capsulas,258,7
-2026-02-01,199173,Betacaroteno 7500IU x 100 Softgeles,258,3
-2026-02-01,199142,Vitamin D3 5000 IU * 100 softgels,258,2
-2026-02-01,199039,Ashawanda 4500mg 50 softgels,258,3
-2026-02-01,198795,Aceite de oliva extravirgen 250ml,258,2
-2026-02-01,198794,Mani 50g,258,4
-2026-02-01,198736,Mieltertos propoleo 350gr,258,2
-2026-02-01,198672,Chromium picolinate 400mcg,258,3
-2026-02-01,198531,Neur-Formula 60 tabletas,258,3
-2026-02-01,198492,Ciruelas 125gr,258,3
-2026-02-01,198489,Shampoo tradicional sensitive 400ml,258,2
-2026-02-01,198241,Vitamin E 400IU plus selenium 60 softgels,258,3
+2026-02-01,192982,Antax 360ml,258,3
+2026-02-01,192868,Acido folico 100 softgels,258,3
+2026-02-01,192839,Ginseng + ginkgo 60 tabletas,258,3
+2026-02-01,192830,Vitamin C 1000mg 100 capsulas,258,3
+2026-02-01,193417,L-Carnitine 800mg 100 softgels,258,3
+2026-02-01,192823,Vitamin C 1000mg 60 capsulas,258,2
+2026-02-01,192777,Mach 550ml,258,3
+2026-02-01,193184,Aceite de higado de bacalao 60 softgels,258,3
+2026-02-01,193420,Cal-Mag-Zinc plus vitamin D 100 softgels,258,2
+2026-02-01,197699,Almendras 250g,258,2
+2026-02-01,194200,Resveratrol extra strength 1600mg 100 softgels,258,3
 2026-02-01,198239,Uno Complex 50 capsulas,258,2
-2026-02-01,198235,Vitacerebrin-A 700gr,258,2
+2026-02-01,192752,1A plus Ultranight 60 capsulas,258,3
 2026-02-01,198234,Colageno hidrolizado con peptidos 700g,258,2
 2026-02-01,198230,Cafe verde  Lipofiber 500 gramos,258,3
-2026-02-01,198145,Acondicionador 400ml,258,3
 2026-02-01,198115,Glucosamine advance 120 softgels,258,2
 2026-02-01,197798,Omega 3 1300 mg 100 softgels,258,3
 2026-02-01,197797,Zarzaparrilla extralim 360ml,258,3
 2026-02-01,197795,Pros-formula 60 capsulas,258,3
-2026-02-01,197699,Almendras 250g,258,2
-2026-02-01,197677,Aguaje plus 100 capsulas,258,2
-2026-02-01,197581,Malteada kids 700g,258,3
-2026-02-01,192982,Antax 360ml,258,3
-2026-02-01,192140,Vitamin D3 + K2 100 softgels,258,3
-2026-02-01,192840,Melatonina 10mg + vitamina B6 100 softgels,258,2
-2026-02-01,192083,Granola especial 500g,258,2
-2026-02-01,192082,Bon Sleep,258,2
-2026-02-01,192081,Quinua Pepa 500g,258,2
-2026-02-01,192006,Esencia insomnio,258,2
-2026-02-01,192005,Esencia stress,258,2
-2026-02-01,191666,Aceite de Coco 250 ml,258,2
-2026-02-01,191556,Leche reparadora Aceite de Argan sobre x 15 ml,258,3
-2026-02-01,191554,Aceite de Argan sobre x 15 ml,258,2
-2026-02-01,191529,Vitamin E 400 selenium x 60 sotgeles,258,3
-2026-02-01,191528,Levadura de Cerveza x 100 Tabletas,258,2
-2026-02-01,191527,Milk thistle silymarina x 100 softgeles,258,2
-2026-02-01,191391,Gel indias 250gr,258,2
-2026-02-01,190437,Crema de guaba 60gr,258,2
-2026-02-01,190338,Anis estrellado 30gr,258,3
-2026-02-01,190336,Alobil adulto 120cc,258,2
-2026-02-01,190232,Echinacea 1500mg 50 softgels,258,2
-2026-02-01,190231,Vitamin C 1500mg 50 softgels,258,3
-2026-02-01,190192,Propomielito max forte,258,2
-2026-02-01,190190,Echinacea 25ml,258,2
+2026-02-01,193421,Centella asiatica 400mg 60 capsulas,258,2
+2026-02-01,197676,Aloe vera 500ml,258,2
+2026-02-01,195883,Citrato de magnesio 90 capsulas,258,5
+2026-02-01,195875,MGÑ 500ml,258,3
+2026-02-01,195650,Paquete de dulces * 100,258,2
+2026-02-01,194632,Magnesium 400mg 100 softgels,258,2
+2026-02-01,194631,Melatonina 5mg + B6 X 100 Softgeles,258,2
+2026-02-01,194564,Sangre de drago 30ml,258,2
+2026-02-01,194464,Resveratrol 1800mg 100 softgels,258,3
+2026-02-01,194408,Palitos nutriespecial,258,2
+2026-02-01,195887,Terapia Multiembronaria x 10 ampollas bebi x 10 polvo,258,4
+2026-02-01,192691,Creatine complex 450gr,258,2
 2026-02-01,190079,Aloe vera & vitamin E 10 capsulas,258,3
+2026-02-01,192476,Aceite de naranja calendula 250ml,258,2
+2026-02-01,190190,Echinacea 25ml,258,2
+2026-02-01,198492,Ciruelas 125gr,258,3
 2026-02-01,190074,Crema antihemorroidal 80g,258,2
 2026-02-01,190073,Esencia freshly pausia 25ml,258,2
 2026-02-01,190072,Propomielito 350g,258,1
@@ -88,173 +50,126 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,190002,Extracto de calendula 60ml,258,3
 2026-02-01,190001,NAD + Resveratrol 1500mg 100softgels,258,3
 2026-02-01,189892,ATF 500ml,258,2
-2026-02-01,192127,Citrato de magnesio 250gr,258,2
-2026-02-01,192868,Acido folico 100 softgels,258,3
-2026-02-01,192128,Biotin 10000 Mcg 100 softgels,258,5
-2026-02-01,192131,Aceite de fenogreco 250ml,258,3
-2026-02-01,192839,Ginseng + ginkgo 60 tabletas,258,3
-2026-02-01,192830,Vitamin C 1000mg 100 capsulas,258,3
-2026-02-01,192823,Vitamin C 1000mg 60 capsulas,258,2
-2026-02-01,192777,Mach 550ml,258,3
-2026-02-01,192752,1A plus Ultranight 60 capsulas,258,3
-2026-02-01,192703,Aceite Onagra Evening primrose oil 500ml 100 softgels,258,2
-2026-02-01,192702,Zarzaparrilla 60 capsulas,258,2
-2026-02-01,192691,Creatine complex 450gr,258,2
-2026-02-01,192563,Mascarilla gold sobre,258,3
-2026-02-01,192554,Capell 60 capsulas,258,2
-2026-02-01,192553,Gaf-Pluss 300 Ml,258,3
-2026-02-01,192536,Bidesan 240ml,258,2
-2026-02-01,192493,Cleanser ZOI 450gr,258,3
-2026-02-01,192477,Vitaliah QB 425g Linaza chia y limon,258,2
-2026-02-01,192476,Aceite de naranja calendula 250ml,258,2
+2026-02-01,189521,Omega 3 1200mg 100 softgels,258,2
+2026-02-01,189236,Ulpro 500ml prostata,258,3
+2026-02-01,189235,Liodol 500ml acido urico gota,258,2
+2026-02-01,189232,Col-terol 500ml colesterol,258,2
+2026-02-01,189231,Ashawandha con vitaminas 60 softgels,258,3
+2026-02-01,189227,F-Liver 500ml higado,258,2
+2026-02-01,189128,Galleta Quinuasol 9 unidades,258,2
+2026-02-01,189123,Galleta chia 9 unidades,258,2
+2026-02-01,190232,Echinacea 1500mg 50 softgels,258,2
+2026-02-01,190336,Alobil adulto 120cc,258,2
+2026-02-01,190338,Anis estrellado 30gr,258,3
+2026-02-01,190437,Crema de guaba 60gr,258,2
 2026-02-01,192474,Chancapiedra 100 capsulas,258,2
 2026-02-01,192420,Castaño de indias 80 capsulas,258,2
 2026-02-01,192413,Mieltertos 240ml,258,2
 2026-02-01,192398,Maca 500mg + vitamina c 60 capsulas,258,2
 2026-02-01,192385,Omega 3-6-9 90 softgels,258,3
 2026-02-01,192364,Aceite de ricino 250ml,258,2
-2026-02-01,192156,Clorofila 500ml,258,3
-2026-02-01,192142,Colageno hidrolizado 700g,258,2
-2026-02-01,199882,Te verde Hojas,258,2
 2026-02-01,192135,Aceite de almendras 250ml,258,2
 2026-02-01,192134,Plata coloidal 240ml,258,3
+2026-02-01,192553,Gaf-Pluss 300 Ml,258,3
 2026-02-01,192133,Lufa 30ml,258,2
 2026-02-01,192129,Cafe de brusca 250 gr,258,3
-2026-02-01,199886,Carbon x 125 gramos,258,2
-2026-02-01,203549,Vinagre de manzana 500ml,258,2
-2026-02-01,199889,Fenogreco Molido x 250 grs,258,2
-2026-02-01,251064,Hgh Advance 60 Softgeles,258,2
-2026-02-01,250024,Coloncleanser (Linaza mix) limon hierbabuena 450gr,258,2
-2026-02-01,249954,Sun Blockers x 60 Perlas Aplicables,258,3
+2026-02-01,192128,Biotin 10000 Mcg 100 softgels,258,5
+2026-02-01,192082,Bon Sleep,258,2
+2026-02-01,191666,Aceite de Coco 250 ml,258,2
+2026-02-01,191556,Leche reparadora Aceite de Argan sobre x 15 ml,258,3
+2026-02-01,191528,Levadura de Cerveza x 100 Tabletas,258,2
+2026-02-01,191527,Milk thistle silymarina x 100 softgeles,258,2
+2026-02-01,191391,Gel indias 250gr,258,2
+2026-02-01,192131,Aceite de fenogreco 250ml,258,3
+2026-02-01,198531,Neur-Formula 60 tabletas,258,3
+2026-02-01,203584,QB10 60 capsulas,258,2
+2026-02-01,198795,Aceite de oliva extravirgen 250ml,258,2
 2026-02-01,249780,Vinagre Manzana con madre 500ml,258,2
-2026-02-01,248647,Chupapanza 100 capsulas,258,3
 2026-02-01,247661,Fenogreco 100 capsulas,258,2
 2026-02-01,247604,Vitamin e + acido hialuronico y colageno unidad,258,7
 2026-02-01,247601,Cloruro de magnesio 250gr,258,2
 2026-02-01,247472,Ferrociton 360ml,258,2
-2026-02-01,247466,Colageno marino 500gr,258,3
 2026-02-01,244998,Factor trans 1000gr,258,2
-2026-02-01,244478,Sangre de drago 80 ml,258,2
 2026-02-01,244446,Fibcol 550gr,258,3
 2026-02-01,244402,Valeriana 80ml,258,2
-2026-02-01,244298,Activox jengibre sobre individual,258,2
-2026-02-01,243180,Paquete de dulces surtidos * 10 stevia,258,2
-2026-02-01,243178,Crema de andrinas,258,2
-2026-02-01,243176,Crema uña de gato,258,3
-2026-02-01,243175,Crema de Azufre,258,2
 2026-02-01,243173,Crema de chuchuguaza,258,3
 2026-02-01,243167,Ginkgo biloba 80mg 60 softgels,258,2
 2026-02-01,239648,Mens multi multivitaminico hombre 100 softgels,258,3
 2026-02-01,239646,Probiotics & prebiotics 120 capsulas,258,2
 2026-02-01,239622,Colageno hidrolizado marino 550gr,258,2
-2026-02-01,239621,Energifort Polvo 1000gr,258,2
 2026-02-01,239620,Calcio Coral marino 1000gr,258,2
 2026-02-01,239619,Maca roja y negra 1000gr,258,2
-2026-02-01,251073,Bwell probioticos sobre,258,7
 2026-02-01,239618,Nutkids ( Niños) 1000g,258,3
-2026-02-01,253004,Testo max 60 capsulas,258,3
+2026-02-01,239615,Kit desintox kids 2 frascos,258,2
+2026-02-01,250024,Coloncleanser (Linaza mix) limon hierbabuena 450gr,258,2
+2026-02-01,251073,Bwell probioticos sobre,258,7
 2026-02-01,257017,Galleta de avena * 9 unidades,258,2
-2026-02-01,304075,Glucosamina Liquida 1000 ml,258,2
+2026-02-01,258593,Clorumag 1000 ml,258,2
+2026-02-01,189107,Colostrum 1000mg x 90 Softgeles,258,2
 2026-02-01,304074,Complejo B Liquido 1000 ml,258,2
 2026-02-01,304066,Domicilio,258,14
 2026-02-01,303585,Colageno marino líquido 500ml,258,2
 2026-02-01,301766,Nuez 125gr,258,2
 2026-02-01,298301,Saw palmetto 320gr 100 softgels,258,3
-2026-02-01,298300,Ashawanda 1000mg plus B12 90 capsulas,258,2
 2026-02-01,298299,Mta-Tox  500 ML,258,2
 2026-02-01,298298,Erogan 30 capsulas,258,2
+2026-02-01,239614,Kit desintox Adulto 2 frascos,258,2
 2026-02-01,298297,Erogan 500ml,258,2
-2026-02-01,295483,Aguaje power 100 capsulas,258,2
-2026-02-01,291342,Activox ice masticable,258,2
-2026-02-01,291211,Diab-zan x 100 Cap,258,3
 2026-02-01,286888,Maca life 60 capsulas,258,3
-2026-02-01,282490,Aceite de aguacate 250ml,258,3
 2026-02-01,270591,Power S * 4 unidades,258,11
-2026-02-01,270562,Energyton  x 100 Softgeles,258,3
 2026-02-01,269395,Milk tistle 1000mg 60 capsulas,258,3
 2026-02-01,268313,Ice Cannabis 110gr,258,2
 2026-02-01,268312,Cannabis 30ml,258,2
-2026-02-01,268164,Vitamin E 1000IU selenium 60 softgels,258,2
 2026-02-01,266358,Prostavita 500ml,258,2
-2026-02-01,263994,Crema castaño de indias 300ml,258,2
-2026-02-01,261912,Gel Arnica Mentolado x 300ml,258,2
 2026-02-01,259916,Nutri (Adulto)+ 1000gr,258,2
 2026-02-01,258602,Valeriana 60 ml,258,2
-2026-02-01,258593,Clorumag 1000 ml,258,2
-2026-02-01,254298,Mieltertos propomielito kids 350gr,258,2
-2026-02-01,239617,Biosiluett 1000gr,258,2
-2026-02-01,239615,Kit desintox kids 2 frascos,258,2
-2026-02-01,239614,Kit desintox Adulto 2 frascos,258,2
-2026-02-01,203558,Gomitas Kids con vitamina C x 60 Gomas,258,3
-2026-02-01,203555,Chlo-green Clorofila Liquida 960ml,258,2
-2026-02-01,203554,Vinagre de manzana 250ml,258,2
-2026-02-01,189533,Aromaticas de coca 20 tisanas,258,1
-2026-02-01,203533,Chanca piedra 360ml,258,3
-2026-02-01,203532,Esencia obesidad por ansiedad,258,2
-2026-02-01,203531,Clorofila 1000ml,258,4
-2026-02-01,203275,Bloqueador Clyax 50gr,258,3
-2026-02-01,203274,Quinua pepa 250gr,258,2
-2026-02-01,203273,Psyllium 400gr,258,2
-2026-02-01,203270,Curcuma 125gr,258,2
-2026-02-01,203269,Ok-fem 500ml,258,2
-2026-02-01,203268,Polen 125gr,258,1
-2026-02-01,203200,Divi Her,258,3
+2026-02-01,295483,Aguaje power 100 capsulas,258,2
+2026-02-01,198794,Mani 50g,258,4
+2026-02-01,222538,Leche de Coco,258,2
+2026-02-01,222475,Alphalip 500mg 60Softgels,258,3
 2026-02-01,202906,Urovital x 60 Capsulas,258,2
-2026-02-01,202795,Galleta de Mani * 9 unidades,258,2
 2026-02-01,202204,Maxi -male 60 capsulas,258,3
 2026-02-01,202109,Selenium 250mcg 100 softgels,258,2
 2026-02-01,202108,Vitamin D3 10000IU 100 softgels,258,2
 2026-02-01,202107,BWell-probiotics & prebiotics 30 sobres,258,3
 2026-02-01,201726,Frutos mixtos 250gr,258,3
-2026-02-01,201656,Melatonina 5mg sublingual * 100 tablets,258,3
-2026-02-01,201653,Vitamin C 1000 whild rose hips x 100 sofgels,258,2
 2026-02-01,201305,Escobita 30g,258,3
-2026-02-01,201304,Colageno & biotin complex 60 softgels,258,2
 2026-02-01,199902,Harina 7 Granos x 500 grs,258,3
 2026-02-01,199901,Gelatina sin Sabor x 125 gr,258,3
-2026-02-01,203584,QB10 60 capsulas,258,2
-2026-02-01,203914,Hepatodren 50 capsulas,258,3
-2026-02-01,203915,ARTH7 60 Capsulas,258,3
-2026-02-01,203986,Cal-Mag-Zinc plus vitamin D 60 softgels,258,3
-2026-02-01,224096,"Kajetho, l cartinina vitamina C 60 cápsulas",258,2
-2026-02-01,223382,Crema despigmentadora Clyax 50gr,258,3
-2026-02-01,223365,Propoleo jengibre 350gr,258,2
-2026-02-01,222538,Leche de Coco,258,2
-2026-02-01,222492,Vitacbrin 500ml,258,2
-2026-02-01,222475,Alphalip 500mg 60Softgels,258,3
+2026-02-01,199882,Te verde Hojas,258,2
+2026-02-01,199856,Frutos mixtox 50gr,258,2
+2026-02-01,304075,Glucosamina Liquida 1000 ml,258,2
+2026-02-01,199849,Frutos mixtos 125gr,258,2
+2026-02-01,199848,Granola ligth 500gr,258,4
+2026-02-01,199173,Betacaroteno 7500IU x 100 Softgeles,258,3
+2026-02-01,199142,Vitamin D3 5000 IU * 100 softgels,258,2
+2026-02-01,199039,Ashawanda 4500mg 50 softgels,258,3
+2026-02-01,203200,Divi Her,258,3
+2026-02-01,203269,Ok-fem 500ml,258,2
+2026-02-01,203270,Curcuma 125gr,258,2
+2026-02-01,203273,Psyllium 400gr,258,2
 2026-02-01,222473,Garlic Oil (ajo) 5000mg 100Softgels,258,3
-2026-02-01,221816,Colageno liquido 500ml,258,3
-2026-02-01,221815,Cirkulan 360ml,258,2
 2026-02-01,221812,Factor de transferencia 1000gr,258,2
 2026-02-01,221563,Flor de jamaica 60gr,258,2
-2026-02-01,221270,St.Johns Wort 60 capsulas,258,3
 2026-02-01,221029,Aguaje 100 cápsulas,258,2
-2026-02-01,199887,Colageno puro x 250 gr,258,3
 2026-02-01,220927,Tajado sin gluten Quinua,258,4
+2026-02-01,220595,Ciruelfort 300gr,258,2
 2026-02-01,220259,Biotin 15000mcg 100 softgels,258,2
 2026-02-01,219243,Choco uvas 125gr,258,2
+2026-02-01,222492,Vitacbrin 500ml,258,2
 2026-02-01,219241,Semilla chia 250gr,258,3
-2026-02-01,219238,Semilla de chia 125gr,258,3
 2026-02-01,219225,Maca negra 1000mg 100 capsulas,258,3
-2026-02-01,219217,Ginkgo-Bilo Liquido 360ml,258,3
 2026-02-01,219210,Erectu bebida 500ml,258,2
-2026-02-01,209584,Biotin 10000 mgc x 100 softgeles,258,3
-2026-02-01,208412,Crema de concha de nacar 60gr,258,3
 2026-02-01,207194,Citrato de magnesio 90 capsulas,258,3
-2026-02-01,207192,Quinua molida 500gr,258,2
 2026-02-01,207073,Calendula 10 ovulos,258,2
-2026-02-01,203987,L-Arginina 1000mg 60 softgels,258,2
-2026-02-01,220595,Ciruelfort 300gr,258,2
-2026-02-01,189521,Omega 3 1200mg 100 softgels,258,2
-2026-02-01,187779,TE MATCHA X 100 Gramos,258,2
-2026-02-01,189235,Liodol 500ml acido urico gota,258,2
-2026-02-01,184985,Alcachofa boldo ruibarbo 60ml,258,3
-2026-02-01,184984,Vira vira 60ml,258,2
-2026-02-01,184983,Pomada calendula 25gr,258,2
-2026-02-01,184981,Kadein  castaño de indias 60 capsulas,258,3
-2026-02-01,184980,Cicalen 360ml,258,2
-2026-02-01,184978,Passiflora 60ml,258,2
-2026-02-01,184977,Valepass forte 60ml,258,2
+2026-02-01,203915,ARTH7 60 Capsulas,258,3
+2026-02-01,203549,Vinagre de manzana 500ml,258,2
+2026-02-01,203533,Chanca piedra 360ml,258,3
+2026-02-01,203531,Clorofila 1000ml,258,4
+2026-02-01,219238,Semilla de chia 125gr,258,3
+2026-02-01,188883,Tajado Quinuasol,258,3
+2026-02-01,185008,Aceite rosa mosqueta 60ml,258,2
+2026-02-01,188881,Tostadas diabeticos,258,4
 2026-02-01,184976,Colon Cleanser (linaza mix) 450gr,258,3
 2026-02-01,184974,Cloruro de magnesio 90 capsulas,258,2
 2026-02-01,184973,Vitamin D3 2000 IU 100 softgels,258,3
@@ -266,58 +181,39 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,184961,Zarzaparrilla 360ml,258,3
 2026-02-01,184960,Locion cannabis + manzanilla 120 ml,258,2
 2026-02-01,184958,Colirio uchuva miel angelita,258,2
-2026-02-01,184957,Bronquisan sobre * 4,258,3
 2026-02-01,184956,Bronquisan jarabe,258,3
 2026-02-01,184955,Bronquisan kids,258,2
 2026-02-01,184954,Bronquisan jalea adulto,258,2
-2026-02-01,184952,Enf-fem salud femenina 100 capsulas,258,1
 2026-02-01,184951,Semilla de chia 500gr,258,2
 2026-02-01,184950,Vitamin B12 1500 mg 100Softgels,258,2
-2026-02-01,184949,Leche de almendras 500gr,258,2
-2026-02-01,184948,Te Ballerina 30 bolsas,258,2
+2026-02-01,184945,B-complex complejo B 100softels,258,3
+2026-02-01,184977,Valepass forte 60ml,258,2
+2026-02-01,184984,Vira vira 60ml,258,2
+2026-02-01,184985,Alcachofa boldo ruibarbo 60ml,258,3
 2026-02-01,184986,Diente de leon 60ml,258,2
-2026-02-01,184947,Apple cider Vinagre capsulas 1500mg 60 softgels,258,2
-2026-02-01,184988,Aceite de coco extravirgen 100ml,258,2
-2026-02-01,184990,Aceite de coco extravirgen 400ml,258,2
-2026-02-01,185028,Jabon de carbon,258,2
-2026-02-01,185027,Jabon de azufre,258,2
-2026-02-01,185024,Jabon antiagne,258,2
-2026-02-01,185023,Gaxoff 50 capsulas,258,3
 2026-02-01,185022,Digestar jalea 190gr,258,2
 2026-02-01,185020,Passiflora 60ml,258,2
 2026-02-01,185017,Antax 170ml,258,3
 2026-02-01,185015,Factor vit 700gr,258,3
-2026-02-01,185014,Bioprosure 700gr,258,3
-2026-02-01,185012,Colageno hidrolizado liquido 500ml,258,3
-2026-02-01,185010,Crema arnica 60g,258,2
 2026-02-01,185009,Crema calendula 60g,258,2
-2026-02-01,185008,Aceite rosa mosqueta 60ml,258,2
 2026-02-01,185007,Super magnesium 400mg 100 softgels,258,2
 2026-02-01,185005,Aceite de argan 60ml,258,2
 2026-02-01,185003,Aceite de coco 60ml,258,3
+2026-02-01,184941,Salvado grueso 500gr,258,2
 2026-02-01,185002,Aceite ricino 60ml,258,3
-2026-02-01,185001,Aceite de almendras  60ml,258,2
 2026-02-01,185000,St.Johns Wort Hierba de San Juan 60 ml,258,3
-2026-02-01,184999,Colclean 300gr,258,2
 2026-02-01,184998,Cloruro de magnesio 90 capsulas,258,3
-2026-02-01,184997,Miel de abejas 375g,258,2
 2026-02-01,184996,Vinagre compuesto 750ml,258,3
-2026-02-01,184995,Vinagre de manzana 750ml,258,2
 2026-02-01,184994,Agua de rosas 500ml,258,3
 2026-02-01,184992,L-Fat 50ml,258,3
 2026-02-01,184991,Megaplex 2 LB,258,2
 2026-02-01,184989,Aceite de coco extravirgen 200ml,258,2
-2026-02-01,184946,Shampoo cannabis 425ml,258,2
-2026-02-01,184945,B-complex complejo B 100softels,258,3
-2026-02-01,184943,Light & clear unidad,258,2
-2026-02-01,184893,Barra vegana Guilt,258,2
-2026-02-01,184891,Te repuesto Goslim,258,3
-2026-02-01,184887,FuroB caja,258,2
-2026-02-01,184886,FuroB x 2 unidades,258,3
-2026-02-01,184885,Retinol Vitamina A coenzimas Unidad,258,3
-2026-02-01,184884,Retinol vitamina A coenzimas 60 capsulas,258,3
+2026-02-01,184988,Aceite de coco extravirgen 100ml,258,2
+2026-02-01,185001,Aceite de almendras  60ml,258,2
+2026-02-01,185023,Gaxoff 50 capsulas,258,3
+2026-02-01,184939,Sal marina uso externo 500gr,258,2
+2026-02-01,184935,Vitafer-L 500ml,258,6
 2026-02-01,184883,Aloe vera & vitamin E unidad,258,9
-2026-02-01,184882,Aloe vera & vitamin E 60 capsulas,258,2
 2026-02-01,184881,Radiant skin Vitamina C unidad,258,5
 2026-02-01,184879,Potassium 120mg 100softgels,258,2
 2026-02-01,184877,Soy Isoflavones 60 softgels,258,2
@@ -325,11 +221,8 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,184875,Garlic (ajo) 100 softgel,258,2
 2026-02-01,184874,Ginkgo biloba 60mg 60 softgels,258,2
 2026-02-01,184873,Omega 3 EPA + DHA / 1300mg salmon oil 100 softgels,258,3
-2026-02-01,184872,Shark catilage 750mg 90 capsulas,258,2
-2026-02-01,184870,Vitamin E 400 UI + zinc 60 softgels,258,3
 2026-02-01,184869,Castaño de indias 500mg 60 capsulas,258,2
 2026-02-01,184868,Mitrum vit 120 softgels,258,3
-2026-02-01,184867,Saw palmetto 320mg 60 softgels,258,2
 2026-02-01,184866,Glucosamine & chondoitrin 100 capsulas,258,2
 2026-02-01,184865,Colagen plus vitamin C 60 softgels,258,2
 2026-02-01,184864,Colagen plus vitamin C 100 softgels,258,2
@@ -337,60 +230,35 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,184862,Balanced B Complejo B 100 softgels,258,2
 2026-02-01,184860,Vitamin D3 plus magnesium 100 softgel,258,2
 2026-02-01,304076,Ginseng Rojo x 1000 ml,258,2
+2026-02-01,184891,Te repuesto Goslim,258,3
+2026-02-01,184893,Barra vegana Guilt,258,2
 2026-02-01,184895,Niacinamide 500mg 100 tabletas,258,3
-2026-02-01,184896,Citrato de magnesio 450gr,258,2
 2026-02-01,184897,Linaza molida 250gr,258,2
-2026-02-01,184899,Flor de jamaica 100gr,258,3
-2026-02-01,184941,Salvado grueso 500gr,258,2
-2026-02-01,184939,Sal marina uso externo 500gr,258,2
-2026-02-01,184938,Sal marina consumo 500gr,258,2
-2026-02-01,184936,Carbon activado 100gr,258,2
-2026-02-01,184935,Vitafer-L 500ml,258,6
 2026-02-01,184934,Linaza pepa 500gr,258,3
 2026-02-01,184933,Linaza pepa 250gr,258,2
-2026-02-01,184931,Shampoo tradicional 400ml,258,2
-2026-02-01,184930,Shampoo keratin2 400ml,258,2
 2026-02-01,184929,Shampoo hombre 400ml,258,3
 2026-02-01,184928,Locion capilar 320ml,258,2
 2026-02-01,184927,Oregano 60 capsulas,258,3
 2026-02-01,184924,GHR-15 60 capsulas,258,2
-2026-02-01,185029,Shampo concentrado 230ml,258,3
 2026-02-01,184922,Vitacerebrina francesa tabletas- ampollas,258,2
+2026-02-01,184921,Vitamin C 1000mg plus Zinc 100 tabletas,258,3
+2026-02-01,184938,Sal marina consumo 500gr,258,2
 2026-02-01,184920,Melaza 250gr,258,2
-2026-02-01,184918,Citrato de potasio 100 capsulas,258,3
-2026-02-01,184915,Leche de casingua 60ml,258,2
 2026-02-01,184914,Vitaliah stevia gotas promo,258,2
-2026-02-01,184913,Stevia 150 sobres,258,2
-2026-02-01,184912,Vitafer sobre,258,9
 2026-02-01,184911,Acacia hojas 40g,258,3
 2026-02-01,184910,Aguaje hinojo 100 cápsulas,258,3
 2026-02-01,184908,Avena chilena 500g,258,2
 2026-02-01,184907,Boldo 20gr,258,2
-2026-02-01,184904,Antisaure 360ml,258,3
 2026-02-01,184903,Linaza molida 500gr,258,4
 2026-02-01,184901,Colageno 250 grm,258,3
-2026-02-01,184921,Vitamin C 1000mg plus Zinc 100 tabletas,258,3
-2026-02-01,189236,Ulpro 500ml prostata,258,3
-2026-02-01,185031,Shampoo mano de res 425ml,258,2
-2026-02-01,185034,Herbatos 120ml,258,2
-2026-02-01,187585,Factor Vitaliah 700g,258,2
-2026-02-01,187519,Papas paquete,258,4
-2026-02-01,187518,Fibra de manzana 500ml,258,3
-2026-02-01,187517,Pistacho 40gr,258,2
-2026-02-01,187515,Platanos,258,4
-2026-02-01,187354,Aceite de romero 60ml,258,2
-2026-02-01,187353,Crema colageno y elastina,258,2
-2026-02-01,187352,Crema despigmentadora Azucena,258,3
-2026-02-01,187351,Dulces X 2 Unidades,258,17
-2026-02-01,187349,UnoAPlus 50 capsulas,258,2
-2026-02-01,187346,Magnesio 500mg 60 capsulas,258,2
-2026-02-01,187343,Fenogreco 80 capsulas,258,2
-2026-02-01,187049,Esencia floral ansiedad,258,2
-2026-02-01,187047,Krill oil 1000mg 30 softgels,258,3
+2026-02-01,184899,Flor de jamaica 100gr,258,3
+2026-02-01,184918,Citrato de potasio 100 capsulas,258,3
+2026-02-01,188882,Polvo dental 65gr,258,2
+2026-02-01,185027,Jabon de azufre,258,2
+2026-02-01,185033,Herbatos niños 120ml,258,2
 2026-02-01,186948,Semillas de ajonjoli 250gr,258,2
 2026-02-01,186230,Tostadas sin gluten,258,3
 2026-02-01,186229,Tajado sin gluten maiz,258,4
-2026-02-01,186227,Limpieza china 360ml,258,2
 2026-02-01,186184,Biotin 10000 mcg 100 softgels,258,2
 2026-02-01,186183,Flor de jamaica 200gr,258,3
 2026-02-01,186152,Vitamina B12 Plus vitamina B6 x 100 sof,258,2
@@ -400,47 +268,37 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,185987,Palitos con bocadillo,258,3
 2026-02-01,185984,Vitacerebrin-A 360ml,258,4
 2026-02-01,185983,Mogolla multifibra,258,4
-2026-02-01,187587,Libifem 400 ml,258,2
 2026-02-01,185982,Mogolla coco,258,5
-2026-02-01,187588,Chicharrin mixto,258,3
-2026-02-01,187593,Chancapiedra Vitaliah 360ml,258,3
-2026-02-01,189234,Tostadas sin gluten maiz,258,3
-2026-02-01,189232,Col-terol 500ml colesterol,258,2
-2026-02-01,189231,Ashawandha con vitaminas 60 softgels,258,3
-2026-02-01,189230,Sis- Neer 500ml estres regulador sueño,258,3
-2026-02-01,189229,Yacon 500ml,258,3
-2026-02-01,189227,F-Liver 500ml higado,258,2
-2026-02-01,189225,S-Fnina 500ml miomas regulador mestrual,258,3
-2026-02-01,189132,Oro coloidal 30ml,258,2
-2026-02-01,189129,Mega Cranberry  60 softgels,258,2
-2026-02-01,189128,Galleta Quinuasol 9 unidades,258,2
-2026-02-01,189123,Galleta chia 9 unidades,258,2
-2026-02-01,189107,Colostrum 1000mg x 90 Softgeles,258,2
-2026-02-01,188897,Cranberry 140mg 60 softgels,258,2
-2026-02-01,188883,Tajado Quinuasol,258,3
-2026-02-01,188882,Polvo dental 65gr,258,2
-2026-02-01,188881,Tostadas diabeticos,258,4
+2026-02-01,185979,Mogolla centegranos,258,4
+2026-02-01,185978,Flor de jamaica 40gr,258,3
+2026-02-01,185880,Hojas de sen 40g,258,2
+2026-02-01,185879,Cafe de brusca 500gr,258,3
+2026-02-01,187047,Krill oil 1000mg 30 softgels,258,3
+2026-02-01,187049,Esencia floral ansiedad,258,2
+2026-02-01,187343,Fenogreco 80 capsulas,258,2
+2026-02-01,187346,Magnesio 500mg 60 capsulas,258,2
 2026-02-01,188880,Galleta coco 9 unidades,258,3
 2026-02-01,188879,Galleta granola 9 unidades,258,2
 2026-02-01,188011,Cafe de brusca 350g,258,2
 2026-02-01,188007,Lipofit fibra 400gr,258,3
-2026-02-01,188005,Marañon 40gr,258,2
 2026-02-01,187788,Kadein castaño de indias 60ml,258,2
 2026-02-01,187786,Vita B Complejo B Liquido 360ml,258,2
 2026-02-01,187785,Curcuma 60 capsulas,258,2
-2026-02-01,187597,Symply clean unidad,258,2
-2026-02-01,187596,Simply clean 60 capsulas,258,3
-2026-02-01,187595,Trypto essen 60 capsulas,258,2
-2026-02-01,187590,Amedanil 30 capsulas,258,2
-2026-02-01,185979,Mogolla centegranos,258,4
-2026-02-01,185978,Flor de jamaica 40gr,258,3
-2026-02-01,185880,Hojas de sen 40g,258,2
-2026-02-01,185070,Henna negro 80gr,258,3
-2026-02-01,185069,Boldex 16 capsulas,258,6
-2026-02-01,185068,BIOCROS SOBRE,258,2
-2026-02-01,185066,Arcilla para mascarilla 250gr,258,3
-2026-02-01,185065,Bon rescate 25ml,258,2
-2026-02-01,185063,Ginseng royal jelly 100ml,258,2
+2026-02-01,187593,Chancapiedra Vitaliah 360ml,258,3
+2026-02-01,185875,Q-podium 20gr,258,2
+2026-02-01,187588,Chicharrin mixto,258,3
+2026-02-01,187585,Factor Vitaliah 700g,258,2
+2026-02-01,187518,Fibra de manzana 500ml,258,3
+2026-02-01,187515,Platanos,258,4
+2026-02-01,187354,Aceite de romero 60ml,258,2
+2026-02-01,187353,Crema colageno y elastina,258,2
+2026-02-01,187352,Crema despigmentadora Azucena,258,3
+2026-02-01,187351,Dulces X 2 Unidades,258,17
+2026-02-01,187349,UnoAPlus 50 capsulas,258,2
+2026-02-01,187587,Libifem 400 ml,258,2
+2026-02-01,185031,Shampoo mano de res 425ml,258,2
+2026-02-01,185874,Rino-Lax,258,3
+2026-02-01,185868,Pikada mixtos,258,5
 2026-02-01,185062,Hepatodren 240ml,258,2
 2026-02-01,185061,Mieltertos sobre,258,3
 2026-02-01,185059,Te Matcha  x 300 gramos,258,2
@@ -451,48 +309,34 @@ date,IdProduct,NameProduct,IdWarehouse,Predicted_Quantity
 2026-02-01,185052,TNT 3 Libras,258,2
 2026-02-01,185051,Megabolic 2 Libras,258,2
 2026-02-01,185049,Omega - 3 colsrol Plus 2*1,258,3
-2026-02-01,185048,Protector solar Arawak sobre,258,2
-2026-02-01,185047,Xtra Nopal 90 capsulas,258,2
 2026-02-01,185045,Alcachofa compuesta 100 capsulas,258,2
-2026-02-01,185044,Garlic (ajo)  1500mg 100 softgels,258,2
 2026-02-01,185043,Chromium picolinate 500mcg 100 softgels,258,2
-2026-02-01,185042,Biotin 900 mcg 120 softgels,258,3
 2026-02-01,185041,Ginkgo biloba 80mg 90 softgels,258,2
-2026-02-01,185040,Liquid absorbable calcium plus vitamin D3 100 softgels,258,3
 2026-02-01,185038,Clorofila 500ml,258,3
 2026-02-01,185037,Omega 3 fish oil 1200mg 60 softgels,258,2
 2026-02-01,185035,Nuez de brasil 50gr,258,2
-2026-02-01,185073,Henna café 20gr,258,3
-2026-02-01,185074,Henna chocolate 20gr,258,3
-2026-02-01,185077,Henna rojo 20gr,258,3
-2026-02-01,185079,Tajado multifibra 18 unidades,258,3
-2026-02-01,185879,Cafe de brusca 500gr,258,3
-2026-02-01,185878,Polen 250g,258,3
-2026-02-01,185875,Q-podium 20gr,258,2
-2026-02-01,185874,Rino-Lax,258,3
-2026-02-01,185872,Marañon Propoleo 150 ml,258,4
-2026-02-01,185871,Turron barra 20g,258,2
-2026-02-01,185868,Pikada mixtos,258,5
-2026-02-01,185832,Marañon propoleo 120ml,258,3
+2026-02-01,185034,Herbatos 120ml,258,2
+2026-02-01,185065,Bon rescate 25ml,258,2
+2026-02-01,185068,BIOCROS SOBRE,258,2
+2026-02-01,185069,Boldex 16 capsulas,258,6
+2026-02-01,185070,Henna negro 80gr,258,3
 2026-02-01,185697,No Sweat clasico,258,2
 2026-02-01,185181,Zinc gluconate 120mg 100 softgels,258,2
 2026-02-01,185179,Probiotics & prebiotics 60 capsulas,258,3
 2026-02-01,185175,Melatonina 3 mg 60 softgels,258,2
 2026-02-01,185173,Menop -  formula 60 capsulas,258,2
-2026-02-01,185033,Herbatos niños 120ml,258,2
-2026-02-01,185116,Respyvit,258,2
 2026-02-01,185112,Disofresh gotas oftalmicas,258,2
 2026-02-01,185109,Control Keep 90 capsulas,258,3
 2026-02-01,185107,Desodorante piedra alumbre 50g,258,2
+2026-02-01,185872,Marañon Propoleo 150 ml,258,4
 2026-02-01,185089,Chicharrines,258,8
-2026-02-01,185088,Bronquinat 240ml Sin Azucar,258,2
-2026-02-01,185087,Dsparax caja,258,3
 2026-02-01,185086,Galletitas minichips,258,5
 2026-02-01,185085,Dulces X unidad,258,89
-2026-02-01,185084,Alpiste molido 500gr,258,2
 2026-02-01,185083,Ginkgo biloba 120 mg 100 softgels,258,3
-2026-02-01,185082,Tajado nutriespecial 18 unidades,258,2
-2026-02-01,185081,Tajado centegranos 18 unidades,258,3
 2026-02-01,185080,Tajado coco zanahoria 18 unidades,258,7
-2026-02-01,185114,Venfit  crema 120g,258,3
+2026-02-01,185079,Tajado multifibra 18 unidades,258,3
+2026-02-01,185077,Henna rojo 20gr,258,3
+2026-02-01,185074,Henna chocolate 20gr,258,3
+2026-02-01,185073,Henna café 20gr,258,3
+2026-02-01,185087,Dsparax caja,258,3
 2026-02-01,336046,Abonos,258,3

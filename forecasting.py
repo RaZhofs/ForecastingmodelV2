@@ -124,8 +124,9 @@ class Forecaster:
         y_test_real = np.expm1(y_test)
         
         metrics = {
+            
             "MAE": mean_absolute_error(y_test_real, preds_real),
-            "RMSE": mean_squared_error(y_test_real, preds_real, squared=False),
+            "RMSE": np.sqrt(mean_squared_error(y_test_real, preds_real)),
             "R2": r2_score(y_test_real, preds_real)
         }
         
@@ -176,8 +177,15 @@ class Forecaster:
         # 2. Construct Placeholder Data
         # We need the last state of every product to generate features (Lags)
         # Identify active products (appeared in history) and get their LAST KNOWN PRICE
+        
+        # --- BUSINESS LOGIC: RECENCY FILTER ---
+        # Only predict for products sold in the last 4 months to avoid discontinued items
+        cutoff_date = last_date - pd.DateOffset(months=4)
+        active_mask = raw_df["CreateDate"] >= cutoff_date
+        raw_df_active = raw_df[active_mask].copy()
+        
         # Sort by date to ensure 'last' is truly recent
-        raw_df_sorted = raw_df.sort_values("CreateDate")
+        raw_df_sorted = raw_df_active.sort_values("CreateDate")
         unique_groups = raw_df_sorted[['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse', 'UnitPrice']].drop_duplicates(
             subset=['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse'], 
             keep='last'
