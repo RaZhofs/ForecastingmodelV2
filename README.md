@@ -51,7 +51,7 @@ python main.py
 
 | File | Description |
 | :--- | :--- |
-| **`next_month_forecast.csv`** | 🎯 **The Goal.** Predicted demand for the upcoming month. Use this for inventory planning. |
+| **`next_month_forecast.csv`** | **The Goal.** Predicted demand for the upcoming month. Use this for inventory planning. |
 | `forecast_results.csv` | Validation report comparing predictions vs. actuals for the test period. |
 | `best_model.pkl` | The trained model artifact (includes Model + Target Encodings). |
 

@@ -103,21 +103,27 @@ def run_pipeline():
         future_forecast = forecaster.predict_next_month(raw_df)
         
         if not future_forecast.empty:
-            # --- MEJORA: Recuperar nombres de productos ---
-            # Creamos un mapeo rápido ID -> Nombre usando los datos originales
-            product_names = raw_df[['IdProduct', 'NameProduct']].drop_duplicates('IdProduct')
+            # 1. Limpieza: Asegurar que NameProduct sea string y quitar nulos
+            # (El nombre ya viene del motor de forecasting, aquí solo lo pulimos)
+            future_forecast['NameProduct'] = future_forecast['NameProduct'].fillna("SIN NOMBRE").astype(str)
+
+            # 2. FILTRAR antes de ordenar (solo lo que vamos a comprar)
+            # Usamos una copia explícita para evitar advertencias de pandas
+            future_forecast = future_forecast[future_forecast["Predicted_Quantity"] > 0].copy()
             
-            # Unimos los nombres al pronóstico
-            future_forecast = future_forecast.merge(product_names, on='IdProduct', how='left')
+            # 3. Ordenamiento explícito: Alfabético por nombre y luego por bodega
+            future_forecast = future_forecast.sort_values(
+                by=["NameProduct", "IdWarehouse"], 
+                ascending=[True, True]
+            )
             
-            # Reordenamos columnas para que sea bonito
+            # 4. Seleccionar y guardar columnas finales
             cols = ['date', 'IdProduct', 'NameProduct', 'IdWarehouse', 'Predicted_Quantity']
             future_forecast = future_forecast[cols]
             
-            # Guardar
             future_file = "next_month_forecast.csv"
             future_forecast.to_csv(future_file, index=False)
-            print(f"Future Forecast saved to '{future_file}'")
+            print(f"Future Forecast saved and professionally sorted in '{future_file}'")
             
         else:
             print("Warning: No predictions generated for next month.")

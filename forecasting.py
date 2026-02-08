@@ -13,13 +13,13 @@ class Forecaster:
         self.model = None
         self.features = [
             "Month", "Year",
-            "IdCompany_te", "IdProduct_te", "IdBranchCompany_te", "IdWarehouse_te",
+            "IdCompany_te", "IdProduct_Unique_te", "IdBranchCompany_te", "IdWarehouse_te",
             "lag_1", "lag_3", "lag_6",
             "roll_3", "roll_6", "roll_12",
             "UnitPrice_log"
         ]
         self.target = "Quantity_log"
-        self.te_groups = ["IdCompany", "IdProduct", "IdBranchCompany", "IdWarehouse"]
+        self.te_groups = ["IdCompany", "IdProduct_Unique", "IdBranchCompany", "IdWarehouse"]
         
     def train(self, df, split_date="2025-01-01"):
         """Trains the LightGBM model and returns metrics."""
@@ -184,10 +184,11 @@ class Forecaster:
         active_mask = raw_df["CreateDate"] >= cutoff_date
         raw_df_active = raw_df[active_mask].copy()
         
+        # Determine active product-warehouse combinations and get their LAST KNOWN PRICE/ID/NAME
         # Sort by date to ensure 'last' is truly recent
         raw_df_sorted = raw_df_active.sort_values("CreateDate")
-        unique_groups = raw_df_sorted[['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse', 'UnitPrice']].drop_duplicates(
-            subset=['IdCompany', 'IdProduct', 'IdBranchCompany', 'IdWarehouse'], 
+        unique_groups = raw_df_sorted[['IdCompany', 'IdProduct', 'NameProduct', 'IdBranchCompany', 'IdWarehouse', 'UnitPrice']].drop_duplicates(
+            subset=['IdCompany', 'IdProduct', 'NameProduct', 'IdBranchCompany', 'IdWarehouse'], 
             keep='last'
         )
         
@@ -227,4 +228,5 @@ class Forecaster:
         
         future_rows["Predicted_Quantity"] = np.ceil(preds_real).astype(int)
         
-        return future_rows[["date", "IdProduct", "IdWarehouse", "Predicted_Quantity"]]
+
+        return future_rows[["date", "IdProduct", "NameProduct", "IdWarehouse", "Predicted_Quantity"]]
