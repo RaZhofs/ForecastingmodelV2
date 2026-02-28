@@ -3,36 +3,22 @@ import numpy as np
 
 def preprocess_data(df, is_inference=False):
 
-    df = df.copy()
+    df_monthly = df.copy()
     
-    # 1. Basic Formatting
-    df["CreateDate"] = pd.to_datetime(df["CreateDate"])
-    df["year_month"] = df["CreateDate"].dt.to_period('M')
+    # Aseguramos que CreateDate sea datetime (la que viene del nuevo SQL
+    df_monthly["CreateDate"] = pd.to_datetime(df_monthly["CreateDate"])
     
-    # --- ANTI-HIJACKING: Create Composite ID ---
+    # REPARACIÓN DEL ERROR: Creamos 'year_month' explícitamente
+    # Esto es lo que el entrenamiento busca después
+    df_monthly["year_month"] = df_monthly["CreateDate"].dt.to_period('M')
+    df_monthly["date"] = df_monthly["CreateDate"] 
 
-    df["IdProduct_Unique"] = df["IdProduct"].astype(str) + "_" + df["NameProduct"].str.lower().str.strip()
+    # 2. ANTI-HIJACKING: Composite ID
+    df_monthly["IdProduct_Unique"] = df_monthly["IdProduct"].astype(str) + "_" + df_monthly["NameProduct"]
     
-    # 2. Monthly Aggregation
-    group_cols = ["year_month", "IdCompany", "IdProduct_Unique", "IdBranchCompany", "IdWarehouse"]
-    # We also need to keep the original IdProduct for the final output, so aggregate it (it's constant per IdProduct_Unique)
-    df_monthly = (df.groupby(group_cols, as_index=False)
-                  .agg({
-                      "Quantity": "sum",
-                      "UnitPrice": "mean",
-                      "IdProduct": "first",
-                      "NameProduct": "first" # Keep for output
-                  }))
-    
-    # 3. Add Time Features
-    df_monthly["date"] = df_monthly["year_month"].dt.to_timestamp()
-    df_monthly["Month"] = df_monthly["year_month"].dt.month
-    df_monthly["Year"] = df_monthly["year_month"].dt.year
-    
-    # 4. Filters
-    # Be careful: Future/Placeholder rows might have 0 price or 0 quantity?
-    # If we filter UnitPrice > 1, we must ensure our placeholder has a valid price.
-    df_monthly = df_monthly[df_monthly["UnitPrice"] > 1]
+    # 3. Time Features
+    df_monthly["Month"] = df_monthly["CreateDate"].dt.month
+    df_monthly["Year"] = df_monthly["CreateDate"].dt.year
     
     # 5. Transformations
     df_monthly["Quantity_log"] = np.log1p(df_monthly["Quantity"])

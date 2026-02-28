@@ -1,7 +1,7 @@
 from database import fetch_sales_data
 from processing import preprocess_data
 from forecasting import Forecaster
-from config import SPLIT_DATE
+from config import SPLIT_DATE, MODEL_PATH
 import pandas as pd
 import numpy as np
 import sys
@@ -32,7 +32,7 @@ def run_pipeline():
     forecaster = Forecaster()
     model_loaded = False
     
-    if os.path.exists("best_model.pkl"):
+    if os.path.exists(MODEL_PATH):
         print(" Saved model found. Loading...")
         if forecaster.load():
             model_loaded = True
