@@ -8,9 +8,7 @@ def preprocess_data(df, is_inference=False):
     # Aseguramos que CreateDate sea datetime (la que viene del nuevo SQL
     df_monthly["CreateDate"] = pd.to_datetime(df_monthly["CreateDate"])
     
-    # REPARACIÓN DEL ERROR: Creamos 'year_month' explícitamente
-    # Esto es lo que el entrenamiento busca después
-    df_monthly["year_month"] = df_monthly["CreateDate"].dt.to_period('M')
+  
     df_monthly["date"] = df_monthly["CreateDate"] 
 
     # 2. ANTI-HIJACKING: Composite ID
@@ -55,21 +53,20 @@ def preprocess_data(df, is_inference=False):
 def smoothed_target_encode(train, test, col, target, global_mean, m=15, smooth_map=None):
 
     if smooth_map is None:
-        # Fit phase
+        if train is None:
+            raise ValueError("'train' cannot be None when 'smooth_map' is None (fit phase requires training data).")
+
         agg = train.groupby(col)[target].agg(['count', 'mean'])
         counts = agg['count']
         means = agg['mean']
-        
-        smooth = (counts * means + m * global_mean) / (counts + m)
-    else:
-        # Use provided map
-        smooth = smooth_map
-    
-    # Transform Train
-    train[col + "_te"] = train[col].map(smooth).fillna(global_mean)
-    
-    # Transform Test (if provided)
+
+        smooth_map = (counts * means + m * global_mean) / (counts + m)
+
+    # Transform whatever dataframes are provided.
+    if train is not None:
+        train[col + "_te"] = train[col].map(smooth_map).fillna(global_mean)
+
     if test is not None:
-        test[col + "_te"] = test[col].map(smooth).fillna(global_mean)
-        
-    return train, test, smooth
+        test[col + "_te"] = test[col].map(smooth_map).fillna(global_mean)
+
+    return train, test, smooth_map

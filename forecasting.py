@@ -104,13 +104,7 @@ class Forecaster:
         
         for col in self.te_groups:
              # Use the saved smooth map
-             # Note: smoothed_target_encode expects 'train' as first arg, but we only have 'test' to transform.
-             # We hack it by passing 'test' as 'train' but with 'smooth_map' provided?
-             # No, function signature: train, test, ...
-             # Transform Train is mandatory in current func.
-             # Let's just do the map manually here for clarity or refactor func.
-             # Re-using func: pass test as "train" argument? No, logic updates "train" inplace.
-             test_df, _, _ = smoothed_target_encode(test_df, None, col, self.target, self.global_mean, smooth_map=self.encodings[col])
+               _, test_df, _ = smoothed_target_encode(None, test_df, col, self.target, self.global_mean, smooth_map=self.encodings[col])
         
         if test_df.empty:
             return None, pd.DataFrame()
@@ -218,7 +212,7 @@ class Forecaster:
         # 5. Apply Target Encoding (using SAVED map)
         for col in self.te_groups:
              # Transform using saved encodings
-             future_rows, _, _ = smoothed_target_encode(future_rows, None, col, self.target, self.global_mean, smooth_map=self.encodings[col])
+               _, future_rows, _ = smoothed_target_encode(None, future_rows, col, self.target, self.global_mean, smooth_map=self.encodings[col])
              
         # 6. Predict
         X_future = future_rows[self.features]
@@ -230,3 +224,4 @@ class Forecaster:
         
 
         return future_rows[["date", "IdProduct", "NameProduct", "IdWarehouse", "Predicted_Quantity"]]
+    
