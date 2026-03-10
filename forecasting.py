@@ -69,15 +69,26 @@ class Forecaster:
         self.model = grid_search.best_estimator_
         print(f"Best parameters found: {grid_search.best_params_}")
         
-        # Metrics
+        # After grid_search.fit(X_train, y_train)
+
+        # Training metrics
+        preds_train_log = self.model.predict(X_train)
+        preds_train_real = np.expm1(preds_train_log)
+        y_train_real = np.expm1(y_train)
+
+        # Test metrics  
         preds_log = self.model.predict(X_test)
-        y_test_real = np.expm1(y_test)
         preds_real = np.expm1(preds_log)
-        
+        y_test_real = np.expm1(y_test)
+
         metrics = {
-            "MAE": mean_absolute_error(y_test_real, preds_real),
-            "RMSE": mean_squared_error(y_test_real, preds_real, squared=False),
-            "R2": r2_score(y_test_real, preds_real)
+            "train_MAE": mean_absolute_error(y_train_real, preds_train_real),
+            "train_RMSE": np.sqrt(mean_squared_error(y_train_real, preds_train_real)),
+            "train_R2": r2_score(y_train_real, preds_train_real),
+            
+            "test_MAE": mean_absolute_error(y_test_real, preds_real),
+            "test_RMSE": np.sqrt(mean_squared_error(y_test_real, preds_real)),
+            "test_R2": r2_score(y_test_real, preds_real)
         }
         
         return metrics, self.model, test_df

@@ -40,10 +40,19 @@ def run_pipeline():
             
             # --- HEALTH CHECK ON LOAD ---
             metrics = forecaster.last_metrics
-            r2_val = metrics.get("R2", -1)
-            if r2_val != -1:
-                print(f" Quality Check (History): R2 = {r2_val:.2f}")
-                if r2_val < 0.40:
+            train_r2 = metrics.get("train_R2")
+            test_r2 = metrics.get("test_R2")
+            legacy_r2 = metrics.get("R2")
+
+            if test_r2 is not None:
+                print(f" Quality Check (History): Train R2 = {train_r2:.2f} | Test R2 = {test_r2:.2f}" if train_r2 is not None else f" Quality Check (History): Test R2 = {test_r2:.2f}")
+                if train_r2 is not None and (train_r2 - test_r2) > 0.15:
+                    print(f" WARNING: Possible overfitting (gap={train_r2 - test_r2:.2f}).")
+                if test_r2 < 0.40:
+                    print(" ALERT: This model has low precision. Consider re-training.")
+            elif legacy_r2 is not None:
+                print(f" Quality Check (History): R2 = {legacy_r2:.2f}")
+                if legacy_r2 < 0.40:
                     print(" ALERT: This model has low precision. Consider re-training.")
             else:
                 print(" Warning: No historical metrics found for this model.")
@@ -78,14 +87,25 @@ def run_pipeline():
                 print(f"Validation Results saved to '{output_file}'")
 
             # --- QUALITY GATE (Immediate Feedack) ---
-            r2_val = metrics.get("R2", -1)
-            if r2_val < 0.40:
+            train_r2 = metrics.get("train_R2")
+            test_r2 = metrics.get("test_R2", metrics.get("R2", -1))
+
+            if train_r2 is not None and test_r2 != -1 and (train_r2 - test_r2) > 0.15:
+                print(f"WARNING: Possible overfitting. Train R2={train_r2:.2f} vs Test R2={test_r2:.2f}")
+
+            if test_r2 < 0.40:
                 print("\n" + "!"*50)
-                print(f"WARNING: Model Quality is Low (R2 = {r2_val:.2f})")
+                if train_r2 is not None:
+                    print(f"WARNING: Model Quality is Low (Train R2 = {train_r2:.2f} | Test R2 = {test_r2:.2f})")
+                else:
+                    print(f"WARNING: Model Quality is Low (R2 = {test_r2:.2f})")
                 print("   Data might be highly volatile. Use suggestions with caution.")
                 print("!"*50 + "\n")
             else:
-                print(f"\nQuality Check Passed (R2 = {r2_val:.2f})\n")
+                if train_r2 is not None:
+                    print(f"\nQuality Check Passed (Train R2 = {train_r2:.2f} | Test R2 = {test_r2:.2f})\n")
+                else:
+                    print(f"\nQuality Check Passed (R2 = {test_r2:.2f})\n")
 
         except Exception as e:
             print(f"Error during training: {e}")
