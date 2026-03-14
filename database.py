@@ -1,21 +1,18 @@
 import pyodbc
 import pandas as pd
-from config import DB_SERVER, DB_NAME, DB_USER, DB_PASSWORD, DB_DRIVER, COMPANY_ID, USE_MOCK_DATA
+from config import DB_SERVER, DB_NAME, DB_DRIVER, COMPANY_ID, USE_MOCK_DATA,COMPANY_ID
 
 def get_db_connection():
-    """Establishes a connection to the SQL Server database."""
     conn_str = (
         f"DRIVER={DB_DRIVER};"
         f"SERVER={DB_SERVER};"
         f"DATABASE={DB_NAME};"
-        f"UID={DB_USER};"
-        f"PWD={DB_PASSWORD}"
+        f"Trusted_Connection=yes;"
     )
     return pyodbc.connect(conn_str)
 
 def fetch_sales_data():
-    """Fetches sales data using SQL or from a local CSV if using mock mode."""
-    
+        
     if USE_MOCK_DATA:
         print("MOCK MODE: Loading data from 'DbSalesModified.csv'")
         # Loading local CSV to simulate DB fetch
@@ -31,7 +28,7 @@ def fetch_sales_data():
 
     """Queries the database."""
     query = f"""
-    DECLARE @CompanyID INT = 150;
+    DECLARE @CompanyID INT = {COMPANY_ID};
 DECLARE @CreateDate DATE = '2023-01-01'
 
 SELECT 
